@@ -31,5 +31,5 @@ app.get('/webhook', (req, res) => {
   res.sendStatus(403);
 });
 
-const port = +procses.env.PORT || 9000;
+const port = +process.env.PORT || 9000;
 app.listen(port, () => console.log('webhook is listening on port' + port));
